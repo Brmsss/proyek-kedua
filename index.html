@@ -165,6 +165,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-center mx-auto">
+                    
                     <div id="alert-box"></div>
                     <!-- Judul bagian pesan -->
                     <h2 class="section-heading">Mau Pesan Bakso Kiloan?</h2>
@@ -199,16 +200,22 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script>
-        const url = new URL('http://127.0.0.1:5500/index.html?status=berhasil#pesan');
-        const status = url.searchParams.get('status');
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get('status');
+        const alertBox = document.getElementById('alert-box');
         if (status === 'berhasil') {
-            const alertBox = document.getElementById('alert-box');
-            alertBox.innerHTML = `
-            <div class="alert alert-success alert-dismissible" role="alert">
-                Pesanan berhasil disimpan!
+            const alertHTML = `
+                <div class="alert alert-success alert-dismissible" role="alert">
+                Berhasil menyimpan pesanan!
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
+                </div>
             `;
+            document.getElementById('alert-box').innerHTML = alertHTML;
+        } else {
+           const alertHTML = `
+                <p></p>
+            `;
+            document.getElementById('alert-box').innerHTML = alertHTML;
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
