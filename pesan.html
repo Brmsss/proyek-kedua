@@ -33,36 +33,47 @@
     </nav>
     <section id="pesan">
         <div class="container">
+            
             <div class="col offset-lg-8 text-center mx-auto">
                 <h2 class="section-heading">Pesan Bakso:</h2>
             </div>
+            
             <hr class="my-4">
             <form>
                 <div class="form-group">
                   <label for="nama">Nama Pemesan :</label>
-                  <input type="text" class="form-control" id="nama" aria-describedby="nama" placeholder="Masukkan Nama Pemesan">
+                  <input type="text" class="form-control" id="nama" aria-describedby="nama" placeholder="Masukkan Nama Pemesan" required>
                 </div>
                 <div class="form-group">
                   <label for="no-hp">Nomor HP :</label>
-                  <input type="text" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" id="no-hp" placeholder="Nomor HP">
+                  <input type="text" class="form-control" id="no-hp" placeholder="Nomor HP" required>
                 </div>
-                <div class="form-group">
+                    <div class="form-group">
                     <label for="jenisBakso">Jenis Bakso :</label>
                     <br>
                     <input class="form-check-input" type="radio" name="exampleRadios" id="baksoBiasa" value="baksoBiasa">
                     <label class="form-check-label" for="baksoBiasa">Bakso Bulat</label>
-                  </div>
-                  <div class="form-check">
+                    </div>
+                    <div class="form-check">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="baksoGepeng" value="baksoGepeng">
                     <label class="form-check-label" for="baksoGepeng">Bakso Gepeng</label>
-                </div>
+                    </div>
+                    <div class="form-check">
+                    <!-- Button trigger modal -->
+                    <a href="#" class="text-decoration-none" onclick="return tabel(event)" style="color: blue;">Lihat Stock</a>
+                    </div>
                 <div class="form-group">
                     <label for="jumlah">Jumlah Pesanan :</label>
-                    <input type="number" class="form-control" id="jumlah" placeholder="Jumlah Pesanan">
+                        <div class="input-group">
+                        <input type="number" class="form-control" id="jumlah" placeholder="Jumlah Pesanan" min="0" required>
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Kg</div>
+                          </div>
+                    </div>
                 </div>
                 <br>
                 <div class="form-group">
-                    <a href="index.html" class="form-control btn-primary text-center text-decoration-none" onclick="return pesan(event)">Pesan</a>
+                    <a href="index.html?status=berhasil#pesan" class="form-control btn-primary text-center text-decoration-none" onclick="return pesan(event)">Pesan</a>
                 </div>
               </form>
         </div>
@@ -96,6 +107,45 @@
                     }
                 })
         }
+    </script>
+    <script>
+        function tabel(ev) {
+                Swal.fire({
+                  showCloseButton: true,
+                  html: `
+                  <h3>Daftar Harga dan Stock Bakso</h1>
+                    <br>
+                  <table class="table table-sm">
+                    <thead>
+                        <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Jenis Bakso</th>
+                        <th scope="col">Harga</th>
+                        <th scope="col">Stock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>Bakso Bulat</td>
+                        <td>Rp. 55.000 / Kg</td>
+                        <td>200 Kg</td>
+                        </tr>
+                        <tr>
+                        <th scope="row">2</th>
+                        <td>Bakso Gepeng</td>
+                        <td>Rp. 70.000 / Kg</td>
+                        <td>168 Kg</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                  `,
+                  showConfirmButton: false,
+                })
+              }
+    </script>
+    <script>
+        
     </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
