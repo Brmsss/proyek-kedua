@@ -165,6 +165,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 text-center mx-auto">
+                    <div id="alert-box"></div>
                     <!-- Judul bagian pesan -->
                     <h2 class="section-heading">Mau Pesan Bakso Kiloan?</h2>
                     <hr class="my-4">
@@ -175,7 +176,7 @@
             <!-- Kontak untuk pemesanan -->
             <div class="row">
                 <div class="col-lg-4 text-center ms-auto"><i class="fa fa-phone fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true"></i>
-                    <p>0823-5107-0707</p>
+                    <p><a href="https://wa.me/+6282351070707">0823-5107-0707</a></p>
                 </div>
                 <div class="col-lg-4 text-center me-auto"><i class="fa fa-envelope-o fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300" data-aos-once="true"></i>
                     <p><a href="mailto:bakso.andayani@gmail.com">bakso.andayani@gmail.com</a></p>
@@ -197,6 +198,19 @@
     <!-- Penyertaan JavaScript -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
+    <script>
+        const url = new URL('http://127.0.0.1:5500/index.html?status=berhasil#pesan');
+        const status = url.searchParams.get('status');
+        if (status === 'berhasil') {
+            const alertBox = document.getElementById('alert-box');
+            alertBox.innerHTML = `
+            <div class="alert alert-success alert-dismissible" role="alert">
+                Pesanan berhasil disimpan!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            `;
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/creative.js"></script>
