@@ -11411,7 +11411,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .text-faded {
-    color: rgba(255, 255, 255, .7)
+    color: rgba(255, 255, 255, .7);
+    text-shadow: #000 1px 0 10px;
 }
 
 section {
