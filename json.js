@@ -3,8 +3,9 @@ async function getData() {
   const pathname = new URL(currentUrl).pathname;
   const hash = window.location.hash;
   const queryString = window.location.search;
+  const url = await fetch('index.html');
   let isIndexPage = pathname === "/index.html";
-  if (isIndexPage || queryString !== "" || hash !== "") {
+  if (url.ok || queryString !== "" || hash !== "") {
     const url = "menu.json";
     try {
       const response = await fetch(url);
