@@ -1,0 +1,44 @@
+[
+  {
+    "nama": "Bakso",
+    "desk": "Kosongan, Mie Putih, Mie Kuning, Indomie atau campur",
+    "harga": "15000",
+    "foto": "assets/img/bakso.webp",
+    "bigfoto": "assets/img/bakso.webp"
+  },
+  {
+    "nama": "Mie Yam",
+    "desk": "Kosongan, Mie Putih, Mie Kuning, Indomie atau campur",
+    "harga": "18000",
+    "foto": "assets/img/yammie.webp",
+    "bigfoto": "assets/img/yammie.webp"
+  },
+  {
+    "nama": "Mie Tiaw Biasa",
+    "desk": "Mie Tiaw Dengan Daging",
+    "harga": "15000",
+    "foto": "assets/img/mie-tiaw-biasa.webp",
+    "bigfoto": "assets/img/mie-tiaw-biasa.webp"
+  },
+  {
+    "nama": "Mie Tiaw Bakso",
+    "desk": "Mie Tiaw dengan Daging dan Bakso dipotong kecil & bakso gepeng",
+    "harga": "18000",
+    "foto": "assets/img/mie-tiaw-bakso.webp",
+    "bigfoto": "assets/img/mie-tiaw-bakso.webp"
+  },
+  {
+    "nama": "Nasi Goreng Biasa",
+    "desk": "Nasi Goreng Daging dan Telur Mata Sapi",
+    "harga": "15000",
+    "foto": "assets/img/nasgor.webp",
+    "bigfoto": "assets/img/nasgor.webp"
+  },
+  {
+    "nama": "Mie Tiaw Bakso",
+    "desk": "Nasi Goreng Bakso + daging dan Telur mata sapi",
+    "harga": "18000",
+    "foto": "assets/img/nasgor-bakso.webp",
+    "bigfoto": "assets/img/nasgor-bakso.webp"
+  }
+]

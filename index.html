@@ -1,227 +1,253 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- Meta tags untuk karakter set, viewport, dan judul -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>Bakso Gepeng Andayani</title>
     <!-- Favicon untuk ikon situs -->
-    <link rel="icon" href="bakso-logo.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="icon" href="bakso-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
     <!-- Penyertaan CSS Bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <!-- Penyertaan font dari Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic"
+    />
     <!-- Penyertaan CSS library AOS untuk animasi saat scrolling -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <!-- Penyertaan CSS library BaguetteBox untuk galeri gambar -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css"
+    />
+  </head>
 
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57">
+  <body
+    id="page-top"
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    data-bs-offset="57"
+  >
     <!-- Navigasi -->
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
-        <!-- Kontainer navigasi -->
-        <div class="container">
-            <!-- Logo dan nama situs -->
-            <img src="bakso-logo.png" width="40" height="32" alt="">
-            <a class="navbar-brand" href="index.html">Bakso Gepeng Andayani</a>
-            <!-- Tombol toggler untuk menu responsif -->
-            <button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-align-justify"></i>
-            </button>
-            <!-- Daftar menu -->
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about"><i class="fa fa-home"></i> Tentang</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#menu"><i class="fa fa-book"></i> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pesan"><i class="fa fa-cart-plus"></i> Pesan</a></li>
-                </ul>
-            </div>
+      <!-- Kontainer navigasi -->
+      <div class="container">
+        <!-- Logo dan nama situs -->
+        <img src="bakso-logo.png" width="40" height="32" alt="" />
+        <a class="navbar-brand" href="index.html">Bakso Gepeng Andayani</a>
+        <!-- Tombol toggler untuk menu responsif -->
+        <button
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-align-justify"></i>
+        </button>
+        <!-- Daftar menu -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about"
+                ><i class="fa fa-home"></i> Tentang</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu"
+                ><i class="fa fa-book"></i> Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pesan"
+                ><i class="fa fa-cart-plus"></i> Pesan</a
+              >
+            </li>
+            <li class="nav-item" id="login-btn">
+              <a class="nav-link" href="login.html"
+                ><i class="fa fa-sign-in"></i> Login</a
+              >
+            </li>
+            <li class="nav-item" id="logout-btn" style="display: none">
+              <a class="nav-link" href="#" id="logout-link"
+                ><i class="fa fa-sign-out"></i> Logout</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- Header -->
-    <header class="text-center text-white d-flex masthead" style="background-image:url('bakso-bga.jpg');">
-        <div class="container my-auto">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <!-- Judul header -->
-                    <h1 class="text-uppercase"><strong>Bakso Gepeng Terenak Di Pontianak</strong></h1>
-                    <hr>
-                </div>
-            </div>
-            <div class="col-lg-8 mx-auto">
-                <!-- Deskripsi header -->
-                <p class="text-faded mb-5">Dijamin murah! Harga mulai dari 15 Ribu Rupiah!</p>
-                <!-- Tombol untuk melihat menu -->
-                <a class="btn btn-primary btn-xl" role="button" href="#menu">Lihat Menu</a>
-            </div>
+    <header
+      class="text-center text-white d-flex masthead"
+      style="background-image: url('bakso-bga.jpg')"
+    >
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <!-- Judul header -->
+            <h1 class="text-uppercase">
+              <strong>Bakso Gepeng Terenak Di Pontianak</strong>
+            </h1>
+            <hr />
+          </div>
         </div>
+        <div class="col-lg-8 mx-auto">
+          <!-- Deskripsi header -->
+          <p class="text-faded mb-5">
+            Dijamin murah! Harga mulai dari 15 Ribu Rupiah!
+          </p>
+          <!-- Tombol untuk melihat menu -->
+          <a class="btn btn-primary btn-xl" role="button" href="#menu"
+            >Lihat Menu</a
+          >
+        </div>
+      </div>
     </header>
     <!-- Bagian tentang -->
     <section id="about" class="bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col offset-lg-8 text-center mx-auto">
-                    <!-- Judul bagian tentang -->
-                    <h2 class="text-white section-heading">Bakso Gepeng Handayani</h2>
-                    <hr class="light my-4">
-                    <!-- Deskripsi bagian tentang -->
-                    <p class="text-faded">Buka Setiap hari kecuali hari minggu dan tanggal merah</p>
-                    <p class="text-faded">Terletak di Jl. Putri Dara Nante No.26, Sungai Bangkong, Kec. Pontianak Kota, Kota Pontianak, Kalimantan Barat.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col offset-lg-8 text-center mx-auto">
+            <!-- Judul bagian tentang -->
+            <h2 class="text-white section-heading">Bakso Gepeng Handayani</h2>
+            <hr class="light my-4" />
+            <!-- Deskripsi bagian tentang -->
+            <p class="text-faded">
+              Buka Setiap hari kecuali hari minggu dan tanggal merah
+            </p>
+            <p class="text-faded">
+              Terletak di Jl. Putri Dara Nante No.26, Sungai Bangkong, Kec.
+              Pontianak Kota, Kota Pontianak, Kalimantan Barat.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Bagian menu -->
     <section id="menu">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <!-- Judul bagian menu -->
-                    <h2 class="section-heading">Menu</h2>
-                    <hr class="my-4">
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <!-- Judul bagian menu -->
+            <h2 class="section-heading">Menu</h2>
+            <hr class="my-4" />
+          </div>
         </div>
-        <div class="container-fluid p-0">
-            <!-- Grid untuk menu & pop up foto menu -->
-            <div class="row g-0 popup-gallery"> 
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="assets/img/bakso.webp"><img class="img-fluid" src="assets/img/bakso.webp">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Bakso</span></div>
-                                <div class="project-name"><span>Kosongan, Mie Putih, kuning, Indomie atau campur</span></div>
-                                <div class="project-name"><span>Rp. 15.000</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="assets/img/yammie.webp"><img class="img-fluid" src="assets/img/yammie.webp">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Mie Yam</span></div>
-                                <div class="project-name"><span>Mie Putih, kuning, Indomie atau campur</span></div>
-                                <div class="project-name"><span>Rp. 18.000</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="assets/img/mie-tiaw-biasa.webp"><img class="img-fluid" src="assets/img/mie-tiaw-biasa.webp">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Mie Tiaw Biasa</span></div>
-                                <div class="project-name"><span>Mie Tiaw dengan Daging</span></div>
-                                <div class="project-name"><span>Rp. 15.000</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="assets/img/mie-tiaw-bakso.webp"><img class="img-fluid" src="assets/img/mie-tiaw-bakso.webp">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Mie Tiaw bakso</span></div>
-                                <div class="project-name"><span>Mie Tiaw dengan Daging dan Bakso dipotong kecil & bakso gepeng</span></div>
-                                <div class="project-name"><span>Rp. 18.000</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="assets/img/nasgor.webp"><img class="img-fluid" src="assets/img/nasgor.webp">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Nasi Goreng Biasa</span></div>
-                                <div class="project-name"><span>Nasi Goreng Daging dan Telur Mata Sapi</span></div>
-                                <div class="project-name"><span>Rp. 15.000</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <a class="portfolio-box" href="assets/img/nasgor-bakso.webp"><img class="img-fluid" src="assets/img/nasgor-bakso.webp">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded"><span>Nasi Goreng Bakso</span></div>
-                                <div class="project-name"><span>Nasi Goreng Bakso + daging dan Telur mata sapi</span></div>
-                                <div class="project-name"><span>Rp. 18.000</span></div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-                <!-- Isi item menu yang lain -->
-            </div>
+      </div>
+      <div class="container-fluid p-0">
+        <!-- Grid untuk menu & pop up foto menu -->
+        <div class="row g-0 popup-gallery" id="menu-container">
+          <!-- Isi Pada JSON -->
         </div>
+      </div>
     </section>
     <!-- Bagian pesan -->
     <section id="pesan">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 text-center mx-auto">
-                    
-                    <div id="alert-box"></div>
-                    <!-- Judul bagian pesan -->
-                    <h2 class="section-heading">Mau Pesan Bakso Kiloan?</h2>
-                    <hr class="my-4">
-                    <!-- Deskripsi bagian pesan -->
-                    <p class="mb-5">Ready bakso kiloan siap dipesan! Hubungi kontak di bawah atau pemesanan online via website!</p>
-                </div>
-            </div>
-            <!-- Kontak untuk pemesanan -->
-            <div class="row">
-                <div class="col-lg-4 text-center ms-auto"><i class="fa fa-phone fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-once="true"></i>
-                    <p><a href="https://wa.me/+6282351070707/?text=Permisi%20kak%20apa%20baksonya%20ready?">0823-5107-0707</a></p>
-                </div>
-                <div class="col-lg-4 text-center me-auto"><i class="fa fa-envelope-o fa-3x mb-3 sr-contact" data-aos="zoom-in" data-aos-duration="300" data-aos-delay="300" data-aos-once="true"></i>
-                    <p><a href="mailto:bakso.andayani@gmail.com">bakso.andayani@gmail.com</a></p>
-                </div>
-                <div class="col-lg-12 text-center ms-auto">
-                    <!-- Tombol untuk pesan online -->
-                    <a class="btn btn-primary btn-xl" role="button" href="pesan.html">Pesan Online</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 text-center mx-auto">
+            <div id="alert-box"></div>
+            <!-- Judul bagian pesan -->
+            <h2 class="section-heading">Mau Pesan Bakso Kiloan?</h2>
+            <hr class="my-4" />
+            <!-- Deskripsi bagian pesan -->
+            <p class="mb-5">
+              Ready bakso kiloan siap dipesan! Hubungi kontak di bawah atau
+              pemesanan online via website!
+            </p>
+          </div>
         </div>
+        <!-- Kontak untuk pemesanan -->
+        <div class="row">
+          <div class="col-lg-4 text-center ms-auto">
+            <i
+              class="fa fa-phone fa-3x mb-3 sr-contact"
+              data-aos="zoom-in"
+              data-aos-duration="300"
+              data-aos-once="true"
+            ></i>
+            <p>
+              <a
+                href="https://wa.me/+6282351070707/?text=Permisi%20kak%20apa%20baksonya%20ready?"
+                >0823-5107-0707</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-4 text-center me-auto">
+            <i
+              class="fa fa-envelope-o fa-3x mb-3 sr-contact"
+              data-aos="zoom-in"
+              data-aos-duration="300"
+              data-aos-delay="300"
+              data-aos-once="true"
+            ></i>
+            <p>
+              <a href="mailto:bakso.andayani@gmail.com"
+                >bakso.andayani@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-12 text-center ms-auto">
+            <!-- Tombol untuk pesan online -->
+            <a
+              class="pesan btn btn-primary btn-xl"
+              role="button"
+              href="pesan.html"
+              >Pesan Online</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Footer -->
     <footer class="footer mt-auto py-3 bg-primary text-center">
-        <div class="container">
-          <!-- Teks footer -->
-          <span class="text-white">Bakso Gepeng Andayani | © Brms - 2024</span>
-        </div>
-      </footer>
+      <div class="container">
+        <!-- Teks footer -->
+        <span class="text-white">Bakso Gepeng Andayani | © Brms - 2024</span>
+      </div>
+    </footer>
     <!-- Penyertaan JavaScript -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        const status = urlParams.get('status');
-        const alertBox = document.getElementById('alert-box');
-        if (status === 'berhasil') {
-            const alertHTML = `
+      const urlParams = new URLSearchParams(window.location.search);
+      const status = urlParams.get("status");
+      const alertBox = document.getElementById("alert-box");
+      if (status === "berhasil") {
+        const alertHTML = `
                 <div class="alert alert-success alert-dismissible" role="alert">
                 Berhasil menyimpan pesanan!
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             `;
-            document.getElementById('alert-box').innerHTML = alertHTML;
-        } else {
-           const alertHTML = `
+        document.getElementById("alert-box").innerHTML = alertHTML;
+      } else {
+        const alertHTML = `
                 <p></p>
             `;
-            document.getElementById('alert-box').innerHTML = alertHTML;
-        }
+        document.getElementById("alert-box").innerHTML = alertHTML;
+      }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/creative.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
-</body>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="json.js"></script>
+    <script src="logout.js"></script>
+  </body>
 </html>

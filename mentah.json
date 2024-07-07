@@ -1,0 +1,17 @@
+[
+  {
+    "jenis": "Bakso Bulat",
+    "harga": "Rp. 55.000 / Kg",
+    "jumlah": "200 Kg"
+  },
+  {
+    "jenis": "Bakso Bulat",
+    "harga": "Rp. 75.000 / Kg",
+    "jumlah": "175 Kg"
+  },
+  {
+    "jenis": "Tahu Bakso",
+    "harga": "Rp. 60.000 / Kg",
+    "jumlah": "100 Kg"
+  }
+]
