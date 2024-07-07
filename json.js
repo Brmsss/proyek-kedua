@@ -3,7 +3,8 @@ async function getData() {
   const pathname = new URL(currentUrl).pathname;
   const hash = window.location.hash;
   const queryString = window.location.search;
-  const url = await fetch('index.html');
+  const urlMenu = await fetch("pesan.html");
+  const url = await fetch("index.html");
   let isIndexPage = pathname === "/index.html";
   if (url.ok || queryString !== "" || hash !== "") {
     const url = "menu.json";
@@ -47,7 +48,7 @@ async function getData() {
     } catch (error) {
       console.error(error.message);
     }
-  } else if (currentUrl === "http://127.0.0.1:5500/pesan.html") {
+  } else if (urlMenu.ok) {
     const url = "mentah.json";
     try {
       const response = await fetch(url);
