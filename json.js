@@ -4,8 +4,8 @@ async function getData() {
       const hash = window.location.hash;
       const queryString = window.location.search;
 
-      let isIndexPage = pathname === "/proyek-kedua/index.html";
-      let isPesanPage = pathname === "/proyek-kedua/pesan.html";
+      let isIndexPage = pathname === "/proyek-akhir/index.html";
+      let isPesanPage = pathname === "/proyek-akhir/pesan.html";
 
       if (isIndexPage || queryString !== "" || hash !== "") {
         const menuUrl = "menu.json";
